@@ -1,0 +1,40 @@
+[{
+    "user_id": "U01",
+    "first_name": "Kamal",
+    "last_name":"Ranga",
+    "age": 30,
+    "company":"zone24x7",
+    "designation":"Associate Software Engineer"
+},
+{
+    "user_id": "U02",
+    "first_name": "Nimal",
+    "last_name":"Ranga",
+    "age": 30,
+    "company":"zone24x7",
+    "designation":"Associate Software Engineer"
+},
+{
+    "user_id": "U03",
+    "first_name": "Ajith",
+    "last_name":"Ranga",
+    "age": 30,
+    "company":"zone24x7",
+    "designation":"Associate Software Engineer"
+},
+{
+    "user_id": "U04",
+    "first_name": "Saman",
+    "last_name":"Ranga",
+    "age": 30,
+    "company":"zone24x7",
+    "designation":"Associate Software Engineer"
+},
+{
+    "user_id": "U05",
+    "first_name": "Madush",
+    "last_name":"Ranga",
+    "age": 30,
+    "company":"zone24x7",
+    "designation":"Associate Software Engineer"
+}]
