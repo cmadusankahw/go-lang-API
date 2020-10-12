@@ -65,6 +65,12 @@ func (h *UserHandelers) addUser(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(`{"message": "post called"}`))
 }
 
+func (h *UserHandelers) updateUser(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusCreated)
+	w.Write([]byte(`{"message": "post called"}`))
+}
+
 func (h *UserHandelers) deleteUser(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
@@ -103,6 +109,7 @@ func main() {
 
 	r.HandleFunc("/get/all", newUserHandelers.getAllUsers).Methods(http.MethodGet)
 	r.HandleFunc("/get/{userID}", newUserHandelers.getUser).Methods(http.MethodGet)
+	r.HandleFunc("/update/{userID}", newUserHandelers.updateUser).Methods(http.MethodPost)
 	r.HandleFunc("/add", newUserHandelers.addUser).Methods(http.MethodPost)
 	r.HandleFunc("/remove/{userID}", newUserHandelers.deleteUser).Methods(http.MethodDelete)
 	r.HandleFunc("/", notFound)
